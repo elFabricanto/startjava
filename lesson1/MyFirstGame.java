@@ -12,19 +12,16 @@ public class MyFirstGame {
 	}
 
 	public static void main(String[] args) {
-		int targetValue = getRand();
-		int playerValue = 91; //равно первому случайному числу с указанными выше константами, использовалось для тестирования
-		boolean winner = false;
+		int targetNumber = getRand();
+		int playerNumber = 0;
 
-		System.out.println(targetValue);
-		while (!winner) {
-			if (playerValue != targetValue) {
+		while (playerNumber <= targetNumber) {
+			if (playerNumber != targetNumber) {
 				System.out.println("Введенное вами число больше (меньше) того, что загадал компьютер");
-				//Необходимо будет реализовать пользовательский ввод числа, пока что бесконечный цикл
 			} else {
-				System.out.println("Вы угадали!");
-				winner = true;
+				System.out.println("Вы угадали! " + playerNumber);
 			}
+			playerNumber++;
 		}
 	}
 }

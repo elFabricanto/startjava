@@ -7,7 +7,7 @@ public class Variable {
 		float coreSpeed = 2.9f;
 		double diagonal = 13.333333333333333;
 		char rev = 'i';
-		boolean newModel = false;
+		boolean isNewModel = false;
 
 		System.out.println("Количество ядер: " + coreCount);
 		System.out.println("Кэш 2 уровня на каждое ядро: " + cacheLevelTwoPerCore);
@@ -16,6 +16,6 @@ public class Variable {
 		System.out.println("Скорость процессора: " + coreSpeed);
 		System.out.println("Диагональ дисплея: " + diagonal);
 		System.out.println("Версия модели: " + rev);
-		System.out.println("Новая модель: " + newModel);
+		System.out.println("Новая модель: " + isNewModel);
 	}
 }
