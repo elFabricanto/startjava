@@ -1,9 +1,9 @@
 public class Calculator {
 	public static void main(String[] args) {
 		int a = 2;
-		int b = 3;
+		int b = 0;
 		int result = 0;
-		char operator = '^';
+		char operator = '+';
 
 		if (operator == '+') {
 			result = a + b;
@@ -32,8 +32,14 @@ public class Calculator {
 				System.out.println("Возведение a в степень b: " + result);
 			}
 		} else if (operator == '%') {
-			result = a % b;
-			System.out.println("Остаток a от деления на b: " + result);
+			if (b == 0) {
+				System.out.println("Деление на 0 запрещено");
+			} else {
+				result = a % b;
+				System.out.println("Остаток a от деления на b: " + result);
+			}
+		} else {
+			System.out.println("Введите другой оператор");
 		}
 	}
 }
