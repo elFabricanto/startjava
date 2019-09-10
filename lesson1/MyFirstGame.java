@@ -1,13 +1,13 @@
 public class MyFirstGame {
 	// Определим константы, необхоимые при генерации псевдослучайного числа
-	public static int a = 35;
-	public static int c = 21;
-	public static int m = 101; // Модуль = 101, так как загаданное число находится в диапзоне [0, 100]
+	public static final int FACTOR = 35;
+	public static final int SUMMAND = 21;
+	public static final int MODULO_OPERAND = 101; // Модуль = 101, так как загаданное число находится в диапзоне [0, 100]
 	public static int seed = 2;
 
 	// Получение псевдослучайного числа
 	public static int getRand() {
-		seed = (a * seed + c) % m;
+		seed = (FACTOR * seed + SUMMAND) % MODULO_OPERAND;
 		return seed;
 	}
 
