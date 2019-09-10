@@ -5,7 +5,7 @@ public class Variable {
 		int cacheLevelThree = 4;
 		long uuid = 21321388201234l;
 		float coreSpeed = 2.9f;
-		double diagonal = 13.333333333333333d;
+		double diagonal = 13.333333333333333;
 		char rev = 'i';
 		boolean newModel = false;
 
